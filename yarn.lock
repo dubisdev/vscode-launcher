@@ -2423,7 +2423,7 @@ inquirer@6.5.2:
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
-installed-sw@1.0.1:
+installed-sw@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/installed-sw/-/installed-sw-1.0.1.tgz#3caf611a841449ff9101fb5b9febd0715ff3e004"
   integrity sha512-ZbzSMxz3WsW+Y1tZbbgnJgHpoUPnVhMmCnvz2aBpvzhwvkq2nVt3QfxvxBZgr5HiYvEIx8CXdfaW0u4L57c2cA==

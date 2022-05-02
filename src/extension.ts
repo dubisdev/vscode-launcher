@@ -16,7 +16,6 @@ const listApps = async () => {
   quickPick.onDidChangeSelection((items) => {
     // @ts-ignore
     const itemPath = items.map((item) => item.path)[0];
-    console.log(itemPath);
     env.openExternal(Uri.parse(itemPath));
   });
   quickPick.onDidHide(() => quickPick.dispose());
@@ -31,7 +30,7 @@ const listApps = async () => {
 
 export function activate(context: ExtensionContext) {
   const listAppsSubscription = commands.registerCommand(
-    `extension.launchApp`,
+    "launcher.listApps",
     listApps
   );
 

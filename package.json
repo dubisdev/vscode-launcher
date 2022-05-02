@@ -6,7 +6,7 @@
   "publisher": "dubisdev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dubisdev/vscode-launcher.git"
+    "url": "git+https://github.com/dubisdev/vscode-launcher.git"
   },
   "engines": {
     "vscode": "^1.66.0"

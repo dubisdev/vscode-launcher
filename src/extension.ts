@@ -15,7 +15,9 @@ const listApps = async () => {
 
   quickPick.onDidChangeSelection((items) => {
     // @ts-ignore
-    const itemPath = items.map((item) => item.path)[0];
+    const itemsPaths = items.map((item) => item.path);
+    const itemPath = itemsPaths[0];
+
     env.openExternal(Uri.parse(itemPath));
   });
   quickPick.onDidHide(() => quickPick.dispose());

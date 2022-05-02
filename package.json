@@ -15,8 +15,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.launchApp",
-    "onCommand:extension.launchDefaultApp"
+    "onCommand:launcher.listApps",
+    "onCommand:launcher.launchDefaultApp"
   ],
   "main": "./dist/extension.js",
   "icon": "icon.png",
@@ -24,21 +24,21 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.launchApp",
+        "command": "launcher.listApps",
         "title": "Launch App"
       },
       {
-        "command": "extension.launchDefaultApp",
-        "title": "Todoist Open [Project]"
+        "command": "launcher.launchDefaultApp",
+        "title": "Launch Default App"
       }
     ],
     "keybindings": [
       {
-        "command": "extension.launchApp",
+        "command": "launcher.listApps",
         "key": "alt+l l"
       },
       {
-        "command": "extension.launchDefaultApp",
+        "command": "launcher.launchDefaultApp",
         "key": "alt+l d"
       }
     ],
@@ -58,7 +58,7 @@
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
-    "compile": "tsc -p ./",
+    "compile": "esbuild src/extension.ts --outfile=dist/extension.js --platform=node --minify --format=cjs",
     "watch": "tsc -watch -p ./",
     "pretest": "yarn run compile",
     "test": "node ./out/test/runTest.js",
@@ -73,6 +73,7 @@
     "@types/vscode": "1.66.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "3.3.0",
+    "esbuild": "^0.14.38",
     "fetch-installed-software": "^0.0.7",
     "glob": "^7.1.6",
     "installed-sw": "1.0.1",

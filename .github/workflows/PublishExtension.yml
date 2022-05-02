@@ -25,5 +25,5 @@ jobs:
       - name: Generate Semantic Release
         run: yarn release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}

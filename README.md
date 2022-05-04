@@ -9,7 +9,7 @@
 
 ![extension listall gif](listall.gif)
 
-### Launch defaul app: `alt+l d`
+### Launch default app: `alt+l d`
 
 - Type `alt+l d` to launch the default app (you will be prompted for setting it if not found)
 - Search and select 🚀

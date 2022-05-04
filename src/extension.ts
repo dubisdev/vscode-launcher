@@ -26,7 +26,17 @@ const createAppsQuickPick = async ({ title = "🚀 SELECT APP 🚀" } = {}) => {
 };
 
 const launchApp = async (appQPI: any) => {
-  return await env.openExternal(Uri.parse(appQPI.path));
+  return window.withProgress(
+    {
+      location: ProgressLocation.Notification,
+      title: `Starting ${appQPI.label}`,
+    },
+    async (progress) => {
+      progress.report({ increment: 0 });
+      await env.openExternal(Uri.parse(appQPI.path));
+      progress.report({ increment: 100 });
+    }
+  );
 };
 
 const listApps = async () => {

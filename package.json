@@ -70,7 +70,7 @@
     "@types/glob": "7.2.0",
     "@types/mocha": "7.0.2",
     "@types/node": "18.0.5",
-    "@types/vscode": "1.69.0",
+    "@types/vscode": "1.66.0",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "esbuild": "0.14.49",

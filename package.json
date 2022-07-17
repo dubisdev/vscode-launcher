@@ -67,20 +67,20 @@
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
-    "@types/glob": "^7.2.0",
-    "@types/mocha": "^7.0.2",
-    "@types/node": "^12.20.50",
-    "@types/vscode": "1.66.0",
-    "commitizen": "^4.2.4",
+    "@types/glob": "7.2.0",
+    "@types/mocha": "7.0.2",
+    "@types/node": "18.0.5",
+    "@types/vscode": "1.69.0",
+    "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
-    "esbuild": "^0.14.38",
-    "fetch-installed-software": "^0.0.7",
-    "glob": "^7.1.6",
-    "mocha": "^7.1.1",
-    "semantic-release": "19.0.2",
-    "semantic-release-vsce": "^5.0.11",
-    "typescript": "^3.9.10",
-    "vscode-test": "^1.3.0"
+    "esbuild": "0.14.49",
+    "fetch-installed-software": "0.0.7",
+    "glob": "7.2.3",
+    "mocha": "7.2.0",
+    "semantic-release": "19.0.3",
+    "semantic-release-vsce": "5.0.18",
+    "typescript": "4.7.4",
+    "vscode-test": "1.6.1"
   },
   "resolutions": {
     "minimist": "^1.2.6"
